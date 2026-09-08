@@ -1,0 +1,30 @@
+﻿ID,Genus,Species,Host_genus,Host_species,Host_family,Nonitalic,Herbarium,ITS,LSU
+1,Pseudozyma,flocculosa,'','','','','GCF_000417875.1',P_flocculosa_its,P_flocculosa_lsu
+2,T.,affinis,Astragalus,glycyphyllos,Fabaceae,'','TUB 15855',MK208477,EF647747
+3,T.,alsinearum,Rabelera,holostea,Caryophyllaceae,'','HUV 10535',EF200032,EF200057
+4,T.,amaranthi,Amaranthus,hybridus,Amaranthaceae,'','HUV 20727',EF200013,EF200038
+5,T.,amaranthi,Amaranthus,palmeri,Amaranthaceae,'','TBA',T_amaranthi_its,T_amaranthi_lsu
+6,T.,anthemidis,Anthemis,chia,Asteraceae,'','GLM F112531',MH399758,
+7,T.,australiensis,Oxalis,exilis,Oxalidaceae,'','BRIP 65455',NR_172460.1,
+8,T.,californica,Grindelia,ciliata,Asteraceae,'','TBA',T_californica_its,T_californica_lsu
+9,T.,dahuangis,Rheum,palmatum,Polygonaceae,'','LZU 13000823',KJ579176,KJ579174
+10,T.,frezzii,Arachis,hypogaea,Fabaceae,'','GCA_054907475.1',T_frezzii_its,T_frezzii_lsu
+11,T.,haumanii,Iresine,diffusa,Amaranthaceae,'','M 0236177',MH399764,
+12,T.,hedysari,Adesmia,punctata,Fabaceae,'','HUV 13620',,EF647750
+13,T.,hennenea,Melampodium,divaricatum,Asteraceae,'','HUV 14434',EF200014,EF200039
+14,T.,italica,Silene,italica,Caryophyllaceae,'','HUV 20345',EF200026,EF200051
+15,T.,lathyri,Lathyrus,pratensis,Fabaceae,'','HUV 11020',,EF647748
+16,T.,leptideum,Chenopodium,album,Amaranthaceae,'','HUV 5916',MK208478,EF647745
+17,T.,melandrii,Silene,latifolia,Caryophyllaceae,'','HUV 12677',EF200024,EF200049
+18,T.,molluginis,Hypertelis,cerviana,Molluginaceae,'','M 0236178',MH399762,
+19,T.,oxalidis,Oxalis,stricta,Oxalidaceae,'','GLM F112524',MH399759,
+20,T.,oxytropis,Oxytropis,pilosa,Fabaceae,'','Kummer P 1146/3*',KF640685,KF640683
+21,T.,polymniae,Smallanthus,riparius,Asteraceae,'','HUV 17240',,EF647751
+22,T.,pustulata,Bidens,pilosa,Asteraceae,'','CUP PR000458',MH399757,
+23,T.,saponariae,Saponaria,officinalis,Caryophyllaceae,'','TUB 012796',EF200022,EF200047
+24,T.,schwarzmaniana,Rheum,ribes,Polygonaceae,'','BASU 4242',JX006079,JX006080
+25,T.,seminis-convolvuli,Calystegia,sepium,Convolvulaceae,'','RCC001',MN792833,MN790779
+26,T.,solani,Solanum,lycopersicum,Solanaceae,'','HUV 11180',EF200037,EF200062
+27,T.,spilanthis,Spilanthes, oleracea,Asteraceae,'','TUB 015856',,EF647753
+28,T.,stajsicii,Oxalis,radicosa,Oxalidaceae,'','BRIP 68991',MW892416.1,
+29,T.,thlaspeos,Arabis,'',Brassicaceae,sp.,'GCA_900291925.1',T._thlaspeos_its,T._thlaspeos_lsu

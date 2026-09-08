@@ -1,0 +1,86 @@
+---
+title: "Figures "
+output: html_document
+date: "2026-08-25"
+---
+
+```{r}
+
+
+
+# Load packages. install if necessary: e.g. install.packages("example")
+
+library(ggtree)
+library(glue)
+library(dplyr)
+library(ggstance)
+library(ggplot2)
+library(ggtext)
+library(phytools)
+
+
+######################
+### ITS LSU TREE #####
+######################
+
+#read in tree and data table
+tree <- read.tree("its_lsu.nwk")
+tree <- midpoint.root(tree)
+df1 <- read.csv("sample_table.csv")
+
+
+#Add italics and put together tip label
+df1 <- dplyr::mutate(df1, lab = glue("'   '~italic({Genus})~italic({Species})~~{Herbarium}~on~italic({Host_genus})~italic({Host_species})~'('~italic({Host_family})~')'"))
+
+
+p<- ggtree(tree) %<+% df1 + ##adjust right value to widen or narrow tree
+   geom_tiplab(
+      aes(label = lab), #format excel with a Color column
+      parse = TRUE,
+      align = FALSE,
+      size = 4, key_glyph = "rect"
+    ) +geom_treescale(x=.05, y=-1) + xlim(0,.5)
+
+
+### Add bootstrap labels
+
+q <- ggtree(tree)
+d <- q$data
+d <- d[!d$isTip,]
+d$label2 <- as.numeric(d$label)
+d70 <- d[d$label2>70,]
+
+# One  label overlaps with tree. Subset label.
+
+d70b <- d70[20, ]
+d70 <- d70[c(1:19,21:22),]
+d70b$label3 <- d70b$label2
+
+p <-p %<+%d70 +geom_text2(aes(label = label2), size = 3.5, hjust = 1.25, vjust = -.25)
+p <-p %<+%d70b +geom_text2(aes(label = label3), size = 3.5, hjust = .35,  vjust = -1)
+
+
+######################
+### BUSCO TREE #######
+######################
+
+
+tree2 <- read.tree('busco.tree')
+df2 <- read.csv('sample_table_busco.csv')
+df2 <- dplyr::mutate(df2, lab = glue("' '~italic({Genus})~italic({Species})~~{Accession}"))
+
+p2 <- ggtree(tree2)  %<+% df2 + ##adjust right value to widen or narrow tree
+   geom_tiplab(
+      aes(label = lab), #format excel with a Color column
+      parse = TRUE,
+      align = FALSE,
+      size = 4, key_glyph = "rect"
+    ) +geom_treescale(x=.05, y=-.5) + xlim(0,1)
+
+
+############
+# Visualize with R studio. Export as Svg and combine in powerpoint.
+
+
+
+```

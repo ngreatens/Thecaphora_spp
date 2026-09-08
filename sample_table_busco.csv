@@ -1,0 +1,14 @@
+﻿ID,Genus,Species,Accession
+GCF_005498985.1_PGRAM_IIB_1.0_genomic_busco,Sporisorium,graminicola,GCF_005498985.1
+GCF_000328475.2_Umaydis521_2.0_genomic_busco,Mycosarcoma,maydis,GCF_000328475.2
+GCF_000747765.1_ASM74776v1_genomic_busco,Moesziomyces,antarcticus,GCF_000747765.1
+GCF_000497045.1_PSEUBRA1_genomic_busco,Kalmanozyma,brasiliensis,GCF_000497045.1
+GCF_000403515.1_ASM40351v1_genomic_busco,Pseudozyma,hubeiensis,GCF_000403515.1
+GCF_900519145.1_Uho2_v1_genomic_busco,Ustilago,hordei,GCF_900519145.1
+GCF_000417875.1_Pflocc_1.0_genomic_busco,Pseudozyma,flocculosa,GCF_000417875.1
+GCA_054907475.1_ASM5490747v1_genomic_busco,Thecaphora,frezzii,GCA_054907475.1
+GCA_900291925.1_version_1_genomic_busco,Thecaphora,thlaspeos,GCA_900291925.1
+Grindelia_final.fa_busco,Thecaphora,californica,TBA
+Urocystis_primulicola_busco,Urocystis,primulicola,JGI1143776
+Violaceomyces_palustris_busco,Violaceomyces,palustris,GCA_003144235.1
+Amaranth_final.fa_busco,Thecaphora,amaranthi,TBA
